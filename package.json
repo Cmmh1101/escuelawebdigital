@@ -1,14 +1,22 @@
 {
   "name": "escuelaweb-v1.0",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a Spanish web development website tutorials inspired by W3schools build to support new Spanish speakers web developers",
   "main": "index.js",
   "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Carla Montano",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
