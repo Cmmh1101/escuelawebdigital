@@ -17,6 +17,20 @@ html {
   --cta-light: #a0bef5;
 }
 
+h5 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
 .navbar {
   background-color: var(--light-gray);
   width: 100%;
@@ -74,7 +88,8 @@ section {
 
 .descSec {
   width: 100%;
-  height: 80vh;
+  height: auto;
+  padding: 200px 0;
 }
 
 .darkBg {
@@ -83,6 +98,6 @@ section {
 
 .mdImage {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
 }
