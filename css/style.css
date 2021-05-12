@@ -31,6 +31,14 @@ a {
   font-size: 1.2rem;
 }
 
+.darkBg {
+  background-color: var(--dark-gray);
+}
+
+.blueBg {
+  background-color: var(--light-blue);
+}
+
 .navbar {
   background-color: var(--light-gray);
   width: 100%;
@@ -90,10 +98,6 @@ section {
   width: 100%;
   height: auto;
   padding: 200px 0;
-}
-
-.darkBg {
-  background-color: var(--dark-gray);
 }
 
 .mdImage {
