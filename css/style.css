@@ -7,3 +7,71 @@
 html {
   font-family: "Noto Sans JP", sans-serif;
 }
+
+:root {
+  --dark-gray: #1d1d1d;
+  --light-blue: #b9faf7;
+  --light-yellow: #f8e4ab;
+  --light-gray: #b5b5b5;
+  --cta-blue: #6497f5;
+  --cta-light: #a0bef5;
+}
+
+.navbar {
+  background-color: var(--light-gray);
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Hero */
+
+.heroSec {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light-blue);
+  overflow: hidden;
+}
+
+.triangleOne {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-gray);
+  transform: skewY(-15deg);
+  transform-origin: top left;
+}
+
+.triangleTwo {
+  position: absolute;
+  bottom: -100%;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-gray);
+  transform: skewY(15deg);
+  transform-origin: top right;
+}
+
+/* inner section */
+
+.darkBg {
+  background-color: var(--dark-gray);
+}
+
+.mdImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
