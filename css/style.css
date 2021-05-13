@@ -113,3 +113,23 @@ section {
   height: 300px;
   object-fit: cover;
 }
+
+footer .links a:hover {
+  text-decoration: none;
+}
+
+.logo-brand a {
+  text-decoration: none;
+}
+
+a .footerLogo {
+  font-size: 3rem;
+}
+
+footer i.fa {
+  font-size: 2rem;
+}
+
+footer i:hover {
+  color: var(--light-blue);
+}
