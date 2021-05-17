@@ -2,7 +2,7 @@
   "name": "escuelaweb-v1.0",
   "version": "1.0.0",
   "description": "This is a Spanish web development website tutorials inspired by W3schools build to support new Spanish speakers web developers",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
