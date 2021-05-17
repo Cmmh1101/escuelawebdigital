@@ -47,7 +47,7 @@ a {
   background-color: var(--light-blue);
 }
 
-.navbar {
+.index-navbar {
   background-color: var(--light-gray);
   width: 100%;
   position: absolute;
@@ -132,4 +132,14 @@ footer i.fa {
 
 footer i:hover {
   color: var(--light-blue);
+}
+
+.main {
+  height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 400px;
 }
