@@ -18,15 +18,16 @@ html {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.1rem;
+  font-weight: 300;
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.1rem;
 }
 
 h4 {
-  font-size: 2.6rem;
+  font-size: 1.9rem;
 }
 
 p {
@@ -134,12 +135,50 @@ footer i:hover {
   color: var(--light-blue);
 }
 
-.main {
+/* .main {
   height: 100vh;
-}
+} */
 
 /* Sidebar */
 
-.sidebar {
-  width: 400px;
+.side-bar {
+  max-width: 200px;
+  max-height: 100vh;
+}
+
+.bd-links {
+  padding: 1rem 0;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* main content */
+
+main {
+  border: 1px solid rgb(235, 235, 235);
+  border-top: none;
+  border-bottom: none;
+  height: auto;
+}
+
+i.icon-jumbo {
+  font-size: 5rem;
+  color: rgb(255, 136, 0);
+}
+
+/* code example */
+
+.example-code span {
+  font-size: 0.8rem;
+}
+
+.tag-name-color {
+  color: var(--cta-blue);
+}
+
+.tag-color {
+  color: var(--light-gray);
+}
+
+.attribute-color {
+  color: var(--cta-light);
 }
