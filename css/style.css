@@ -31,7 +31,7 @@ h4 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 a {
@@ -58,7 +58,7 @@ a {
 /* General section */
 section {
   width: 100%;
-  height: 100hv;
+  height: 100vh;
 }
 
 /* Hero */
@@ -141,8 +141,18 @@ footer i:hover {
 
 /* Sidebar */
 
+.sidebar-link-group h5 {
+  font-weight: 500;
+}
+
+.sidebar-link-group ul li a {
+  text-decoration: none;
+  color: var(--dark-gray);
+  font-size: 1rem;
+}
+
 .side-bar {
-  max-width: 200px;
+  max-width: 180px;
   max-height: 100vh;
 }
 
@@ -151,6 +161,7 @@ footer i:hover {
   margin-right: -15px;
   margin-left: -15px;
 }
+
 /* main content */
 
 main {
@@ -161,7 +172,7 @@ main {
 }
 
 i.icon-jumbo {
-  font-size: 5rem;
+  font-size: 10rem;
   color: rgb(255, 136, 0);
 }
 
