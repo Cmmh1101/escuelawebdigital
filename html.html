@@ -328,9 +328,18 @@
 
     <!-- main area -->
 
-    <div class="container-fluid sidebar-container">
+    <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <div class="col-xs-1 col-md-3 col-xl-2 main overflow-auto">
+        <div
+          class="
+            col-xs-1 col-md-3 col-xl-2
+            main
+            overflow-auto
+            bg-light
+            m-0
+            pr-0
+          "
+        >
           <form role="search" class="search-form d-flex align-items-center">
             <span
               class="algolia-autocomplete"
@@ -397,14 +406,16 @@
             </button>
           </form>
           <nav
-            class="collapse bd-links d-md-block side-bar pl-2"
+            class="collapse navbar d-md-block side-bar pl-2 pr-0 m-0"
             id="sb-tutorials"
             aria-label="Main navigation"
           >
             <h5>HTML Tutoriales</h5>
-            <div class="sidebar-link-group">
-              <ul class="nav sidenav">
-                <li><a href="#" class="active sb-active">HTML - Inicio</a></li>
+            <div class="sidebar-link-group m-0">
+              <ul class="nav navbar-nav sidenav">
+                <li class="nav-item sub-link__active">
+                  <a href="#" class="sub-link__active">HTML - Inicio</a>
+                </li>
                 <li><a href="introhtml.html">HTML - Introducción</a></li>
                 <li><a href="#">HTML - Editores</a></li>
                 <li><a href="#">HTML - básico</a></li>

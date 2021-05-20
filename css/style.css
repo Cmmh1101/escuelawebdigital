@@ -15,6 +15,7 @@ html {
   --light-gray: #b5b5b5;
   --cta-blue: #6497f5;
   --cta-light: #a0bef5;
+  --teal: #008080;
 }
 
 h2 {
@@ -152,14 +153,17 @@ footer i:hover {
 }
 
 .side-bar {
-  max-width: 180px;
+  max-width: 200px;
   max-height: 100vh;
 }
 
-.bd-links {
-  padding: 1rem 0;
-  margin-right: -15px;
-  margin-left: -15px;
+.sidebar-link-group ul li .sub-link__active {
+  color: var(--teal);
+  font-weight: 500;
+}
+.sidebar-link-group ul li:hover a {
+  color: var(--teal);
+  font-weight: 500;
 }
 
 /* main content */
