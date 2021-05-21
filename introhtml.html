@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Introduccion al HTML</title>
+    <title>HTML</title>
   </head>
 
   <body>
@@ -80,14 +80,7 @@
                 <div class="dropdown-divider"></div>
 
                 <!-- flex to create layout -->
-                <div
-                  class="
-                    d-md-flex
-                    align-items-start
-                    justify-content-start
-                    mega-menu
-                  "
-                >
+                <div class="d-md-flex align-items-start justify-content-start">
                   <div>
                     <div class="dropdown-header">
                       <h5 class="font-weight-bold">HTML y CSS</h5>
@@ -335,9 +328,18 @@
 
     <!-- main area -->
 
-    <div class="container-fluid sidebar-container">
+    <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <div class="col-xs-1 col-md-3 col-xl-2 main overflow-auto">
+        <div
+          class="
+            col-xs-1 col-md-3 col-xl-2
+            main
+            overflow-auto
+            bg-light
+            m-0
+            pr-0
+          "
+        >
           <form role="search" class="search-form d-flex align-items-center">
             <span
               class="algolia-autocomplete"
@@ -404,15 +406,19 @@
             </button>
           </form>
           <nav
-            class="collapse bd-links d-md-block side-bar pl-2"
+            class="collapse navbar d-md-block side-bar pl-2 pr-0 m-0"
             id="sb-tutorials"
             aria-label="Main navigation"
           >
             <h5>HTML Tutoriales</h5>
-            <div class="sidebar-link-group">
-              <ul class="nav sidenav">
-                <li><a href="#" class="active sb-active">HTML - Inicio</a></li>
-                <li><a href="introhtml.html">HTML - Introducción</a></li>
+            <div class="sidebar-link-group m-0">
+              <ul class="nav navbar-nav sidenav">
+                <li class="nav-item">
+                  <a href="html.html">HTML - Inicio</a>
+                </li>
+                <li class="sub-link__active">
+                  <a href="#" class="sub-link__active">HTML - Introducción</a>
+                </li>
                 <li><a href="#">HTML - Editores</a></li>
                 <li><a href="#">HTML - básico</a></li>
                 <li><a href="#">HTML - Elementos</a></li>
@@ -541,7 +547,7 @@
             <div class="prev-next d-flex justify-content-between">
               <a href="" class="btn btn-info"
                 ><i class="fa fa-angle-left pr-2" aria-hidden="true"></i>
-                Inicio</a
+                Anterior</a
               >
               <a href="" class="btn btn-info"
                 >Siguiente<i
@@ -557,29 +563,39 @@
               <div class="mx-5 align-self-center">
                 <i class="fa fa-html5 icon-jumbo" aria-hidden="true"></i>
               </div>
-              <div class="media-body ml-5">
-                <h1 class="mt-0">HTML</h1>
-                <p>
-                  HTML es el lenguaje estándar para páginas web.<br />
-                  Con HTML puede crear su propio sitio web. <br />HTML es fácil
-                  de aprender y ¡lo disfrutará!
-                </p>
-                <a class="btn btn-dark" href="#" role="button">Aprende HTML</a>
+              <div class="media-body ml-3 pr-2 pr-md-5">
+                <h1 class="mt-0">¿Qué es HTML?</h1>
+                <ul>
+                  <li>HTML son las siglas de Hyper Text Markup Language</li>
+                  <li>
+                    Es el lenguaje de marcado estándar para crear páginas web.
+                  </li>
+                  <li>Describe la estructura de una página web</li>
+                  <li>Consta de una serie de elementos</li>
+                  <li>
+                    Los elementos HTML le dicen al navegador cómo mostrar el
+                    contenido.
+                  </li>
+                  <li>
+                    Los elementos etiquetan partes de contenido como "esto es un
+                    titulo", "esto es un párrafo", "esto es un enlace", etc.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
 
           <div class="m-4">
             <div class="my-5">
-              <h2>Aprende mas rapido usando nuestro editor de codigo!</h2>
+              <h2>Este es un ejemplo sencillo de un documento HTML</h2>
               <p>
-                Prueba por ti mismo!<br />Con nuestro editor puedes editar el
-                codigo y ver el resultado al instante.
+                En este ejemplo puedes ver algunos elementos basicos que estan
+                presentes en cada pagina web que visitas.
               </p>
             </div>
 
             <div class="card my-5">
-              <div class="card-header">Ejemplos</div>
+              <div class="card-header">Ejemplo</div>
               <div class="card-body bg-dark mx-3 my-5 py-1 example-code">
                 <!-- code text -->
                 <span class="tag-name-color">
@@ -665,12 +681,41 @@
           <!-- Ejemplos y practica -->
           <div class="m-4">
             <div class="my-5">
-              <h2>Ejemplos de HTML</h2>
-              <p>
-                A lo largo del tutorial encontraras ejemplos que serviran de
-                guia y con la ayuda de nuestro editor de codigo podras modificar
-                y ver los resultados en vivo.
-              </p>
+              <h2>Examinemos el ejemplo:</h2>
+              <ul class="mt-4">
+                <li>
+                  &lt!DOCTYPE html&gt Indica que este es un
+                  <strong>documento HTML</strong>
+                </li>
+                <li>
+                  &lthtml&gt Es el elemento <strong>raíz</strong> de una página
+                </li>
+                <li>
+                  &lthead&gt Es el elemento que contiene
+                  <strong>metainformación (metatags)</strong> sobre la página
+                </li>
+                <li>
+                  &lttitle&gt especifica el <strong>título</strong> para la
+                  página (el titulo que se ve en la pestaña de la página
+                </li>
+                <li>
+                  <span class="tag-name-color">
+                    <span class="tag-color">&lt;</span>
+                    body
+                    <span class="tag-color">&gt;</span>
+                  </span>
+                  <strong>cuerpo del documento</strong> y es un
+                  <strong>contenedor</strong> para todos los contenidos que se
+                  ven en una pagina como esta, título, parrafos, imagenes, etc.
+                </li>
+                <li>
+                  &lth1&gt Indica que su contenido es un <strong>título</strong>
+                </li>
+                <li>
+                  &ltp&gt Indica que su contenido es un
+                  <strong>parrafo</strong>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="dropdown-divider mx-4"></div>
@@ -688,24 +733,110 @@
                 "
               >
                 <div class="card-body md-ml-5">
-                  <h2 class="card-title">Prueba de HTML</h2>
+                  <h2 class="card-title">¿Qué es un elemento HTML?</h2>
                   <p class="card-text">
-                    Pon a prueba tus conocimientos y habilidades de HTML con
-                    nuestra prueba!
+                    Un <strong>elemento en html</strong> se define con una
+                    etiqueta de inicio el contenido y una etiqueta final
                   </p>
-                  <a class="btn btn-dark btn-sm" href="#" role="button"
-                    >Inicia la prueba</a
-                  >
+                  <p>
+                    <span class="tag-name-color">
+                      <span class="tag-color">&lt;</span>
+                      etiqueta inicial
+                      <span class="tag-color">&gt;</span>
+                    </span>
+                    contenido que se ve en la pagina
+                    <span class="tag-name-color">
+                      <span class="tag-color">&lt;/</span>
+                      etiqueta final
+                      <span class="tag-color">&gt;</span>
+                    </span>
+                  </p>
+                  <h3 class="font-weight-light">Ejemplo:</h3>
+                  <p class="text-center">
+                    <span class="tag-name-color">
+                      <span class="tag-color">&lt;</span>
+                      h1
+                      <span class="tag-color">&gt;</span>
+                    </span>
+                    Mi titulo principal
+                    <span class="tag-name-color">
+                      <span class="tag-color">&lt;/</span>
+                      h1
+                      <span class="tag-color">&gt;</span>
+                    </span>
+                  </p>
                 </div>
               </div>
               <div class="col-md-4">
                 <img
                   src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-                  class="mdImage"
+                  class="mdImage img-fluid"
                 />
               </div>
             </div>
           </div>
+          <div class="container p-5">
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Etiqueta inicial (first tag)</th>
+                  <th scope="col">Contenido del elemento (element content)</th>
+                  <th scope="col">Etiqueta final (end tag)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <span class="tag-name-color">
+                      <span class="tag-color">&lt;</span>
+                      p
+                      <span class="tag-color">&gt;</span>
+                    </span>
+                  </td>
+                  <td>parrafo / paragraph</td>
+                  <td>
+                    <span class="tag-name-color">
+                      <span class="tag-color">&lt;/</span>
+                      p
+                      <span class="tag-color">&gt;</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <span class="tag-name-color">
+                      <span class="tag-color">&lt;</span>
+                      img
+                      <span class="tag-color">&gt;</span>
+                    </span>
+                  </td>
+                  <td>ubicacion de una imagen</td>
+                  <td><em>no aplica</em></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>
+                    <span class="tag-name-color">
+                      <span class="tag-color">&lt;</span>
+                      br
+                      <span class="tag-color">&gt;</span>
+                    </span>
+                  </td>
+                  <td><em>no aplica</em></td>
+                  <td><em>no aplica</em></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="px-5 mb-5">
+            <strong>Nota:</strong> En la tabla se muestra que hay elementos HTML
+            con etiqueta de inicio y cierre (ej. 1) y elementos que solo tienen
+            Inicio (ej. 2-3).
+          </div>
+
           <div class="prev-next d-flex justify-content-between mx-4">
             <a href="" class="btn btn-info"
               ><i class="fa fa-angle-left pr-2" aria-hidden="true"></i>
