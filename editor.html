@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- build:css css/main.css -->
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/editor.css" />
+    <!-- endbuild -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Editor de codigo</title>
+  </head>
+
+  <body>
+    <div class="editor-content p-0 m-0">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="home text-light p-2" href="index.html"
+          ><i class="fa fa-home" aria-hidden="true"></i
+        ></a>
+        <a class="home text-light p-2 ml-3"
+          ><i class="fa fa-save" aria-hidden="true"></i
+        ></a>
+        <a class="home text-light p-2 ml-3" href="index.html"
+          ><i class="fa fa-retweet" aria-hidden="true"></i
+        ></a>
+        <a class="home text-light p-2 ml-3" href="index.html"
+          ><i class="fa fa-adjust" aria-hidden="true"></i
+        ></a>
+        <button class="px-2 py-1 ml-3">Prueba</button>
+      </nav>
+      <div class="editor-area d-flex p-0 m-0">
+        <div class="panel-one" id="drag-left">
+          <textarea
+            id="code"
+            class="bg-dark p-2 m-0"
+            placeholder="your code goes here"
+          ></textarea>
+        </div>
+
+        <div class="dragbar" id="dragbar"></div>
+
+        <div class="panel-two p-0 m-0" id="drag-right">
+          <iframe id="display"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- build:js js/main.js -->
+    <!-- Jquery Js -->
+    <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- Popper Js -->
+    <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/editor.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
