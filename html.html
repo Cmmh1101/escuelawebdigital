@@ -70,17 +70,24 @@
 
               <!-- mega menu starts here -->
               <div
-                class="dropdown-menu dropdown-menu-right"
+                class="dropdown-menu dropdown-menu-right bg-dark mega-dropdown"
                 aria-labelledby="servicesDropdown"
               >
                 <!-- standard dropdown items -->
-                <h4 class="ml-3">Tutoriales</h4>
+                <h4 class="ml-3 text-info">Tutoriales</h4>
 
                 <!-- divider -->
                 <div class="dropdown-divider"></div>
 
                 <!-- flex to create layout -->
-                <div class="d-md-flex align-items-start justify-content-start">
+                <div
+                  class="
+                    d-md-flex
+                    align-items-start
+                    justify-content-start
+                    drop-container
+                  "
+                >
                   <div>
                     <div class="dropdown-header">
                       <h5 class="font-weight-bold">HTML y CSS</h5>
@@ -110,7 +117,7 @@
                     <a class="dropdown-item" href="#">Aprende AJAX</a>
                     <a class="dropdown-item" href="#">Aprende AppML</a>
                     <a class="dropdown-item" href="#">Aprende W3.JS</a>
-                    <div class="dropdown-header">
+                    <!-- <div class="dropdown-header">
                       <h5 class="font-weight-bold">Programacion</h5>
                     </div>
                     <a class="dropdown-item" href="#">Aprende JavaScript</a>
@@ -119,10 +126,10 @@
                     <a class="dropdown-item" href="#">Aprende JSON</a>
                     <a class="dropdown-item" href="#">Aprende AJAX</a>
                     <a class="dropdown-item" href="#">Aprende AppML</a>
-                    <a class="dropdown-item" href="#">Aprende W3.JS</a>
+                    <a class="dropdown-item" href="#">Aprende W3.JS</a> -->
                   </div>
 
-                  <div>
+                  <!-- <div>
                     <div class="dropdown-header">
                       <h5 class="font-weight-bold">Servidor</h5>
                     </div>
@@ -143,7 +150,7 @@
                     <a class="dropdown-item" href="#">Contact form creation</a>
                     <a class="dropdown-item" href="#">Automated backups</a>
                     <a class="dropdown-item" href="#">Image to HTML</a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </li>
@@ -163,11 +170,11 @@
 
               <!-- mega menu starts -->
               <div
-                class="dropdown-menu dropdown-menu-right"
+                class="dropdown-menu dropdown-menu-right bg-dark"
                 aria-labelledby="practiceDropdown"
               >
                 <!-- standard dropdown items -->
-                <h4 class="ml-3">Practica</h4>
+                <h4 class="ml-3 text-info">Practica</h4>
 
                 <!-- divider -->
                 <div class="dropdown-divider"></div>
@@ -228,19 +235,19 @@
 
     <!-- Sub Menu -->
     <!-- navigation -->
-    <nav class="navbar navbar-expand navbar-dark sticky-top bg-dark">
+    <nav class="navbar navbar-expand navbar-dark bg-dark submenu">
       <div class="container">
         <button
           type="button"
           class="navbar-toggler"
           data-toggle="collapse"
-          data-target="#nucampNavbar"
+          data-target="#submenu"
           aria-pressed="false"
           autocomplete="off"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="nucampNavbar">
+        <div class="collapse navbar-collapse" id="submenu">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="index.html" class="nav-link"
